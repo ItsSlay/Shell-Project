@@ -1,6 +1,6 @@
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
 
         while (true)
@@ -10,6 +10,9 @@ class Program
             var Test = Console.ReadLine();
             if (Test == "exit") {
                 return;
+            }else if (Test.StartsWith("echo"))
+            {
+                Console.WriteLine(Test[5..]);
             }
             else
             {
