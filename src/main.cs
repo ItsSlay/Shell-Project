@@ -2,12 +2,21 @@ class Program
 {
     static void Main()
     {
+
         while (true)
         {
+            
             Console.Write("$ ");
-            // TODO: Uncomment the code below to pass the first stage
             var Test = Console.ReadLine();
+            if (Test == "exit") {
+                return;
+            }
+            else
+            {
             Console.WriteLine($"{Test}: command not found");
+
+            }
+            
         }
         
     }
